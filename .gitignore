@@ -1,0 +1,5 @@
+.eslintrc
+_github/
+backend/node_modules/
+lib/
+node_modules/

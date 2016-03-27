@@ -1,0 +1,49 @@
+.jumbotron {
+	text-align: center;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	padding: 1px 20px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #ccc;
+}
+.table {
+	margin-top: 20px;
+	text-align: left;
+}
+.form-control {
+	margin-bottom: 5px;
+}
+.selecionado {
+	background-color: #cccccc;
+}
+.negrito {
+	font-weight: bold;
+}
+h3 {
+	text-shadow: 1px 1px 1px #ccc;
+}
+.tdserial {
+	/*font-size: 10px;*/
+}
+.tdnome {
+	max-width:80px;
+}
+.tdfone {
+	width:100px;
+}
+.alert-danger {
+	padding:5px 15px;
+}
+.red {
+		color:red;
+}
+a, a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+	color:#000;
+}
+a.btn {
+	color:#fff;
+}
+form {margin-top:15px;}
