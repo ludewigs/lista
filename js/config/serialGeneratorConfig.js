@@ -1,3 +1,3 @@
-angular.module("listaTelefonica").config(['serialGeneratorProvider', function(serialGeneratorProvider) {
-  serialGeneratorProvider.setLength(5);
-}]);
+angular.module('listaTelefonica').config(['serialGeneratorProvider', function (serialGeneratorProvider) {
+  serialGeneratorProvider.setLength(5)
+}])
