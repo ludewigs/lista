@@ -1,4 +1,5 @@
 angular.module('listaTelefonica').directive('uiDate', ['$filter', function ($filter) {
+
   return {
     require: 'ngModel',
     link: function (scope, element, attrs, ctrl) {
@@ -35,4 +36,5 @@ angular.module('listaTelefonica').directive('uiDate', ['$filter', function ($fil
       })
     }
   }
+
 }])

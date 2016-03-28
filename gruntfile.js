@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     clean: {
@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         'dist/js/libs.min.js',
         'dist/js/scripts.js',
         'dist/js/scripts.min.js'
-        ],
+      ],
       all: ['dist/']
     },
     eslint: {
@@ -66,13 +66,13 @@ module.exports = function(grunt) {
 
   })
 
-  require('load-grunt-tasks')(grunt);
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  require('load-grunt-tasks')(grunt)
+  grunt.loadNpmTasks('grunt-contrib-concat')
+  grunt.loadNpmTasks('grunt-contrib-uglify')
+  grunt.loadNpmTasks('grunt-contrib-cssmin')
+  grunt.loadNpmTasks('grunt-contrib-htmlmin')
+  grunt.loadNpmTasks('grunt-contrib-clean')
+  grunt.loadNpmTasks('grunt-contrib-copy')
 
   grunt.registerTask('default', ['clean:all', 'eslint', 'concat:scripts', 'concat:libs', 'uglify', 'concat:all', 'cssmin', 'htmlmin', 'copy', 'clean:temp'])
 

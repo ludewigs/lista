@@ -1,4 +1,5 @@
 angular.module('listaTelefonica').factory('contatosAPI', ['$http', 'backend', function ($http, backend) {
+
   var _getContatos = function () {
     return $http.get(backend.baseUrl + '/contatos')
   }

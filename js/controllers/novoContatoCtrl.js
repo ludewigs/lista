@@ -1,4 +1,5 @@
 angular.module('listaTelefonica').controller('novoContatoCtrl', ['$scope', '$location', 'nomeApp', 'contatosAPI', 'operadorasAPI', 'serialGenerator', 'operadoras', function ($scope, $location, nomeApp, contatosAPI, operadorasAPI, serialGenerator, operadoras) {
+
   $scope.operadoras = operadoras.data
   $scope.appName = nomeApp.name
 
@@ -12,4 +13,5 @@ angular.module('listaTelefonica').controller('novoContatoCtrl', ['$scope', '$loc
       $location.path('/contatos')
     })
   }
+
 }])

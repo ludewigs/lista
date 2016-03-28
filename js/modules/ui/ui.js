@@ -43,4 +43,5 @@ angular.module('ui').directive('uiAccordion', function () {
       }
     }
   }
+
 })

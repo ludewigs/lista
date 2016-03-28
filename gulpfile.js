@@ -21,7 +21,7 @@ gulp.task('eslint', function () {
 })
 
 gulp.task('uglify', function () {
-  return es.merge ([
+  return es.merge([
     gulp.src(['lib/angular/angular.min.js', 'lib/angular/angular-route.min.js', 'lib/angular/angular-messages.min.js']),
     gulp.src(['js/**/*.js', '/lib/angular/angular-locale_pt-br.js']).pipe(uglify())
   ])
@@ -36,7 +36,7 @@ gulp.task('htmlmin', function () {
 })
 
 gulp.task('cssmin', function () {
-  return es.merge ([
+  return es.merge([
     gulp.src('lib/bootstrap/css/bootstrap.min.css'),
     gulp.src('css/**/*.css').pipe(cleanCSS())
   ])
@@ -51,5 +51,5 @@ gulp.task('copy', function () {
 })
 
 gulp.task('default', function (cb) {
-  return runSequence ('clean', ['eslint', 'uglify', 'htmlmin', 'cssmin', 'copy'], cb)
+  return runSequence('clean', ['eslint', 'uglify', 'htmlmin', 'cssmin', 'copy'], cb)
 })
